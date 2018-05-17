@@ -9,6 +9,10 @@ Here is the result:
 
 I created new task called `git bash`, added _Task parameters_: `/icon "c:\Program Files\Git\mingw64\share\git\git-for-windows.ico"`, added _Command_: `"c:\Program Files\Git\bin\sh.exe" --login -i` and clicked _Startup dir..._ button and navigated to my desired startup directory what resulted into `-new_console:d:C:\dev\eit` being prepended in front of command.
 
+`sh.exe` parameters are actually `bash` parameters, see [man bash](https://linux.die.net/man/1/bash)
+* `--login` = Make bash act as if it had been invoked as a login shell
+* `-i` = the shell is interactive
+
 ![Git Bash task in Cmder](cmder-task-snip.PNG)
 
 I also set git bash task as `Startup` task to run automatically on `Cmder` startup:
